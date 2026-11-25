@@ -1,0 +1,159 @@
+
+export type Article = {
+  id: string;
+  category: string;
+  title: string;
+  description: string;
+  readingTime: string;
+  content: string[];
+};
+
+export const articles: Article[] = [
+  {
+    id: 'skincare',
+    category: 'SKINCARE',
+    title: 'O guia definitivo de cuidados com a pele',
+    description: 'Conheça seu tipo de pele, monte uma rotina consistente e aprenda a escolher produtos.',
+    readingTime: '15 minutos',
+    content: [
+      'CAPÍTULO 1 — CONHEÇA SUA PELE. Os tipos mais comuns são normal, seca, oleosa e mista. Essas características podem mudar com clima, idade, hormônios e hábitos. Observe como sua pele se comporta ao longo do dia, se repuxa após a limpeza e se apresenta brilho ou ressecamento em determinadas regiões.',
+      'CAPÍTULO 2 — ROTINA DA MANHÃ. Comece com uma limpeza suave, aplique hidratante conforme a necessidade e finalize com protetor solar de amplo espectro FPS 30 ou superior. Não é necessário utilizar muitos produtos para construir uma rotina consistente.',
+      'CAPÍTULO 3 — ROTINA NOTURNA. Remova maquiagem e protetor solar, limpe delicadamente e aplique hidratante. A noite também pode ser um momento para tratamentos específicos, mas introduza ativos gradualmente e respeite as instruções de cada produto.',
+      'CAPÍTULO 4 — LIMPEZA. Escolha um limpador adequado à sua pele. Evite água muito quente, esfregar com força ou lavar excessivamente. Massageie com as pontas dos dedos e enxágue completamente. A pele não deve ficar desconfortavelmente repuxada depois da limpeza.',
+      'CAPÍTULO 5 — HIDRATAÇÃO. Ingredientes como glicerina e ceramidas aparecem em diferentes hidratantes. Peles oleosas também precisam de hidratação e podem preferir texturas leves. Peles secas podem gostar de fórmulas mais emolientes. Escolha produtos confortáveis e compatíveis com sua pele.',
+      'CAPÍTULO 6 — PROTEÇÃO SOLAR. Utilize protetor solar de amplo espectro FPS 30 ou superior nas áreas expostas. Reaplique conforme as instruções, especialmente após nadar, suar intensamente ou secar-se com toalha. Chapéus, roupas e sombra complementam a proteção.',
+      'CAPÍTULO 7 — ATIVOS E CUIDADOS. Introduza um produto novo por vez. Evite combinar vários esfoliantes ou ativos potentes sem orientação. Produtos com ácidos e retinoides podem causar irritação e exigem atenção especial; alguns não são apropriados durante a gestação.',
+      'CHECKLIST: manhã — limpeza suave, hidratação e protetor solar. Noite — remoção de maquiagem, limpeza e hidratação. Ardor intenso, inchaço, feridas, acne persistente ou alterações preocupantes merecem avaliação dermatológica.'
+    ]
+  },
+  {
+    id: 'hair',
+    category: 'CABELOS',
+    title: 'Cabelos saudáveis: cuidados e tratamentos',
+    description: 'Entenda couro cabeludo, lavagem, hidratação, finalização e manutenção.',
+    readingTime: '14 minutos',
+    content: [
+      'CAPÍTULO 1 — CONHEÇA SEUS FIOS. Observe textura, curvatura, espessura, densidade, oleosidade e danos. O couro cabeludo pode ter necessidades diferentes do comprimento. Coloração, descoloração e ferramentas térmicas também influenciam os cuidados necessários.',
+      'CAPÍTULO 2 — LAVAGEM. Molhe os cabelos e aplique shampoo principalmente no couro cabeludo. Massageie com as pontas dos dedos, sem usar as unhas. O condicionador deve ser distribuído principalmente no comprimento e nas pontas. A frequência depende da oleosidade, suor e rotina.',
+      'CAPÍTULO 3 — HIDRATAÇÃO. Máscaras condicionantes ajudam a melhorar maciez e maleabilidade. Escolha uma fórmula adequada à condição dos fios e siga o tempo de ação indicado. Usar mais produto do que o recomendado não significa obter um resultado melhor.',
+      'CAPÍTULO 4 — NUTRIÇÃO E RECONSTRUÇÃO. Produtos com óleos e agentes condicionantes podem melhorar o toque e reduzir o aspecto áspero. Fórmulas com proteínas podem ser úteis em alguns cabelos danificados, mas o excesso pode deixar os fios rígidos. Observe os resultados e ajuste a frequência.',
+      'CAPÍTULO 5 — FINALIZAÇÃO. Desembarace com delicadeza, começando pelas pontas. Use produtos de finalização conforme a textura e o acabamento desejado. Para secador e chapinha, aplique protetor térmico adequado e prefira temperaturas moderadas.',
+      'CAPÍTULO 6 — QUÍMICAS. Descoloração, alisamentos e colorações podem alterar a estrutura dos fios. Respeite os intervalos, procure profissionais capacitados e evite combinar procedimentos incompatíveis. Não aplique produtos químicos sobre couro cabeludo irritado.',
+      'CAPÍTULO 7 — MANUTENÇÃO. Evite penteados que puxem excessivamente os fios, reduza o atrito e mantenha acessórios limpos. Queda acentuada, falhas, coceira persistente ou descamação importante precisam de avaliação dermatológica.',
+      'ROTINA DE PARTIDA: shampoo adequado ao couro cabeludo, condicionador, máscara quando necessária, finalização e proteção térmica. Ajuste as etapas conforme a resposta dos seus fios.'
+    ]
+  },
+  {
+    id: 'makeup',
+    category: 'MAQUIAGEM',
+    title: 'Maquiagem: técnicas para todos os dias',
+    description: 'Preparação, escolha de tons, aplicação, acabamento e higiene.',
+    readingTime: '13 minutos',
+    content: [
+      'CAPÍTULO 1 — PREPARAÇÃO. Comece com a pele limpa e confortável. Hidratante e protetor solar ajudam a preparar a pele. Aguarde a absorção dos produtos antes de aplicar maquiagem. Primer é opcional e pode ser escolhido conforme o acabamento desejado.',
+      'CAPÍTULO 2 — ESCOLHA DA BASE. Considere tom, subtom, textura e acabamento. Teste a cor em uma região próxima ao rosto e observe em luz natural. Se possível, aguarde alguns minutos para verificar se a tonalidade muda após a aplicação.',
+      'CAPÍTULO 3 — APLICAÇÃO. Comece com pouca quantidade de produto e construa a cobertura gradualmente. Esponjas, pincéis e dedos podem oferecer acabamentos diferentes. Evite acumular muitas camadas e limpe os acessórios regularmente.',
+      'CAPÍTULO 4 — OLHOS. Sombras neutras são versáteis, mas não existem cores obrigatórias. Aplique pequenas quantidades e esfume as bordas. Evite compartilhar produtos para os olhos e suspenda o uso se houver irritação.',
+      'CAPÍTULO 5 — BLUSH E LÁBIOS. Escolha cores conforme seu gosto e o efeito desejado. Aplique blush aos poucos. Para os lábios, utilize um hidratante quando necessário e retire o excesso antes de aplicar batom.',
+      'CAPÍTULO 6 — DURABILIDADE. Camadas finas podem ajudar a evitar acúmulo. Pó facial é opcional e pode ser usado nas áreas que apresentam mais brilho. Spray fixador deve ser aplicado conforme as instruções do fabricante.',
+      'CAPÍTULO 7 — HIGIENE. Confira validade e período de uso após abertura. Não adicione água ou saliva aos produtos. Limpe pincéis e esponjas regularmente e remova a maquiagem antes de dormir.',
+      'LOOK ESSENCIAL: preparação confortável, cobertura leve, corretivo pontual, blush, máscara de cílios e produto labial. Adapte tudo ao seu estilo. Maquiagem é expressão pessoal, não obrigação.'
+    ]
+  },
+  {
+    id: 'body',
+    category: 'AUTOCUIDADO',
+    title: 'Autocuidado e beleza de dentro para fora',
+    description: 'Hábitos realistas de higiene, hidratação, descanso e cuidado corporal.',
+    readingTime: '12 minutos',
+    content: [
+      'CAPÍTULO 1 — AUTOCUIDADO SEM COBRANÇA. Autocuidado não precisa ser caro ou demorado. Pode ser descansar, organizar horários, cuidar da pele ou reservar alguns minutos para uma atividade prazerosa. Escolha hábitos que respeitem seus limites.',
+      'CAPÍTULO 2 — HIGIENE CORPORAL. Use produtos adequados à sua pele e evite água muito quente ou fricção excessiva. Seque com delicadeza, especialmente nas dobras. Mantenha toalhas limpas e suspenda produtos que provoquem irritação.',
+      'CAPÍTULO 3 — HIDRATAÇÃO. Aplicar hidratante após o banho pode ajudar a manter o conforto da pele. Escolha uma textura agradável e adequada às suas necessidades. Áreas mais ressecadas podem exigir atenção adicional.',
+      'CAPÍTULO 4 — PROTEÇÃO. Utilize protetor solar nas áreas expostas e combine com roupas, chapéus e sombra. Não esqueça regiões como orelhas, pescoço e mãos.',
+      'CAPÍTULO 5 — BEM-ESTAR. Sono regular, alimentação variada, movimento adequado à sua condição e pausas ao longo do dia contribuem para o bem-estar. Não existe uma rotina perfeita e dicas da internet não substituem acompanhamento profissional.',
+      'CAPÍTULO 6 — CUIDADOS ESPECÍFICOS. Axilas, pés e mãos podem exigir cuidados diferentes. Evite receitas caseiras agressivas e não aplique produtos irritantes em pele lesionada. Dor, feridas ou sinais de infecção merecem avaliação.',
+      'PLANO DE 7 DIAS: escolha um hábito simples por dia, como hidratar após o banho, organizar o horário de dormir ou fazer uma pausa. Mantenha os hábitos que realmente ajudarem.'
+    ]
+  },
+  {
+    id: 'nails',
+    category: 'UNHAS',
+    title: 'O universo dos cuidados com as unhas',
+    description: 'Higiene, formatos, esmaltação, cutículas e manutenção.',
+    readingTime: '10 minutos',
+    content: [
+      'CAPÍTULO 1 — HIGIENE. Mantenha mãos, unhas e instrumentos limpos. Não compartilhe alicates, cortadores ou ferramentas que possam causar pequenas lesões. Em serviços profissionais, observe os cuidados de esterilização e higiene.',
+      'CAPÍTULO 2 — CORTE E FORMATO. Corte as unhas com cuidado e evite aprofundar os cantos. Lixe suavemente e escolha um formato confortável para suas atividades. Unhas não precisam ter comprimento específico para serem bonitas.',
+      'CAPÍTULO 3 — CUTÍCULAS. A cutícula ajuda a proteger a região ao redor da unha. Evite removê-la profundamente ou empurrá-la com força. Hidrate mãos e unhas regularmente e não puxe pelinhas soltas.',
+      'CAPÍTULO 4 — ESMALTAÇÃO. Aplique esmalte em camadas finas e respeite o tempo de secagem. Utilize removedor apropriado e suspenda o uso se houver irritação. Mantenha o ambiente ventilado.',
+      'CAPÍTULO 5 — GEL E ALONGAMENTOS. Procedimentos em gel e acrílico exigem aplicação e remoção cuidadosas. Não arranque o material nem lixe excessivamente a unha natural. Procure profissionais capacitados.',
+      'CAPÍTULO 6 — SINAIS DE ALERTA. Alterações persistentes de cor, espessura, formato, dor, inchaço ou descolamento precisam de avaliação. Não tente diagnosticar alterações apenas por fotografias.',
+      'KIT BÁSICO: cortador individual, lixa em bom estado, hidratante para mãos e unhas e removedor adequado. Mantenha os itens limpos e de uso pessoal.'
+    ]
+  },
+  {
+    id: 'perfume',
+    category: 'FRAGRÂNCIAS',
+    title: 'Como descobrir sua fragrância ideal',
+    description: 'Famílias olfativas, notas, experimentação e conservação.',
+    readingTime: '9 minutos',
+    content: [
+      'CAPÍTULO 1 — FAMÍLIAS OLFATIVAS. Fragrâncias podem ser florais, cítricas, amadeiradas, aromáticas, gourmand, verdes ou aquáticas. Muitos perfumes combinam diferentes famílias. Pense nos aromas que você já gosta.',
+      'CAPÍTULO 2 — NOTAS. As notas de saída aparecem logo após a aplicação. As notas de coração formam parte importante da identidade da fragrância, enquanto as notas de fundo podem permanecer por mais tempo.',
+      'CAPÍTULO 3 — COMO TESTAR. Experimente poucas fragrâncias por vez para evitar fadiga olfativa. Teste na pele e observe a evolução ao longo do dia. Não esfregue os pulsos após aplicar.',
+      'CAPÍTULO 4 — CONCENTRAÇÃO. Eau de toilette, eau de parfum e parfum são categorias relacionadas à concentração. Elas não garantem sozinhas a duração: fórmula, pele, clima e aplicação também influenciam.',
+      'CAPÍTULO 5 — ARMAZENAMENTO. Mantenha perfumes longe de calor, luz direta e umidade. Deixe a embalagem bem fechada e respeite a validade indicada pelo fabricante.',
+      'CAPÍTULO 6 — ESCOLHA PESSOAL. Algumas pessoas preferem aromas leves durante o dia e fragrâncias intensas em ocasiões especiais. Isso não é uma regra. Escolha o que combina com seu gosto e proporciona conforto.',
+      'Se você tem sensibilidade a fragrâncias, histórico de alergia ou irritação, seja cautelosa e interrompa o uso diante de qualquer reação.'
+    ]
+  },
+  {
+    id: 'sunscreen',
+    category: 'PROTEÇÃO SOLAR',
+    title: 'Proteção solar: guia prático para todos os dias',
+    description: 'Entenda FPS, amplo espectro, aplicação e hábitos de fotoproteção.',
+    readingTime: '11 minutos',
+    content: [
+      'CAPÍTULO 1 — O QUE É FPS. O fator de proteção solar está relacionado principalmente à proteção contra UVB. Prefira produtos de amplo espectro, que também ofereçam proteção UVA. FPS 30 ou superior é uma referência comum para uso diário.',
+      'CAPÍTULO 2 — ESCOLHA DA FÓRMULA. Textura, acabamento, resistência à água e sensibilidade influenciam a escolha. Algumas pessoas preferem fórmulas leves; outras gostam de texturas mais hidratantes. O melhor produto é aquele adequado à sua necessidade e que você consegue utilizar corretamente.',
+      'CAPÍTULO 3 — APLICAÇÃO. Aplique quantidade generosa e uniforme nas áreas expostas, seguindo as instruções do rótulo. Não esqueça orelhas, pescoço e mãos. Aplicar pouco produto reduz a proteção obtida.',
+      'CAPÍTULO 4 — REAPLICAÇÃO. Reaplique conforme as instruções, especialmente após nadar, suar intensamente ou secar-se com toalha. Durante exposição prolongada ao ar livre, a reaplicação regular é importante.',
+      'CAPÍTULO 5 — PROTEÇÃO COMPLEMENTAR. Procure sombra, utilize roupas que cubram a pele, chapéu e óculos com proteção UV. Combinar hábitos oferece proteção mais abrangente do que depender de uma única medida.',
+      'CAPÍTULO 6 — CONSERVAÇÃO. Confira validade e instruções de armazenamento. Não utilize produtos com alterações incomuns de cheiro, cor ou textura. Pessoas com condições dermatológicas ou uso de medicamentos fotossensibilizantes devem conversar com um profissional de saúde.',
+      'LEMBRETE: protetor solar não torna a exposição ilimitada segura. Evite queimaduras e bronzeamento artificial. Procure dermatologista para avaliar manchas e lesões que mudam.'
+    ]
+  },
+  {
+    id: 'sensitive-skin',
+    category: 'PELE SENSÍVEL',
+    title: 'Pele sensível: como montar uma rotina gentil',
+    description: 'Simplifique os cuidados e preserve o conforto da pele.',
+    readingTime: '10 minutos',
+    content: [
+      'CAPÍTULO 1 — ENTENDA OS SINAIS. Ardor, coceira, vermelhidão e sensação de repuxamento podem aparecer em diferentes tipos de pele. Esses sinais possuem diversas causas e não permitem identificar uma doença apenas pela aparência.',
+      'CAPÍTULO 2 — SIMPLIFIQUE A ROTINA. Quando a pele está desconfortável, priorize poucos produtos: limpeza suave, hidratante confortável e protetor solar adequado. Evite adicionar muitos produtos novos ao mesmo tempo.',
+      'CAPÍTULO 3 — LEIA OS RÓTULOS. Fragrâncias e alguns ativos podem incomodar determinadas pessoas, mas a tolerância é individual. Produtos naturais ou hipoalergênicos não garantem ausência de reação.',
+      'CAPÍTULO 4 — INTRODUZA GRADUALMENTE. Adicione um produto por vez e observe a resposta. Testar em uma pequena área pode ajudar a identificar irritação, mas não garante que nunca haverá reação.',
+      'CAPÍTULO 5 — PROTEJA A BARREIRA. Evite água muito quente, esfoliação agressiva e fricção. Hidrate com uma fórmula confortável. Não use limão, bicarbonato ou pasta de dente como tratamentos caseiros.',
+      'CAPÍTULO 6 — QUANDO PROCURAR AJUDA. Reações intensas, inchaço, bolhas, dor, secreção ou sintomas persistentes precisam de avaliação profissional. Dificuldade para respirar ou reação alérgica generalizada exige atendimento de emergência.',
+      'ROTINA GENTIL: poucos produtos, aplicação delicada e observação consistente. O objetivo é conforto e saúde, não alcançar uma aparência perfeita.'
+    ]
+  },
+  {
+    id: 'curly-hair',
+    category: 'CABELOS CACHEADOS',
+    title: 'Cabelos cacheados e crespos: guia de cuidados',
+    description: 'Desembaraço, hidratação, finalização e preservação da curvatura natural.',
+    readingTime: '12 minutos',
+    content: [
+      'CAPÍTULO 1 — ENTENDA SUA CURVATURA. Cabelos ondulados, cacheados e crespos apresentam diferentes padrões. A curvatura não determina sozinha a necessidade de produtos: espessura, densidade, danos e preferências também importam.',
+      'CAPÍTULO 2 — LAVAGEM. Escolha shampoo que limpe o couro cabeludo sem desconforto e condicionador que facilite o desembaraço. A frequência depende de oleosidade, suor e acúmulo de produtos.',
+      'CAPÍTULO 3 — DESEMBARAÇO. Divida o cabelo em seções e use os dedos ou pente de dentes largos, começando pelas pontas. Utilize condicionador ou produto apropriado quando facilitar o processo. Evite puxões.',
+      'CAPÍTULO 4 — FINALIZAÇÃO. Cremes, géis e mousses oferecem resultados diferentes. Aplique pequenas quantidades em mechas e ajuste conforme a resposta dos fios. Amassar suavemente pode ajudar a formar os cachos.',
+      'CAPÍTULO 5 — SECAGEM. Retire o excesso de água com tecido macio, sem esfregar. Se usar difusor, considere temperatura e fluxo de ar moderados. Evite prender os fios com força.',
+      'CAPÍTULO 6 — DAY AFTER. Para revitalizar, umedeça levemente algumas áreas e use pequena quantidade de finalizador, se necessário. Se houver coceira ou descamação persistente, procure avaliação profissional.',
+      'ROTINA DE PARTIDA: lavagem conforme necessidade, condicionamento, desembaraço gentil, finalização em seções e secagem cuidadosa. Ajuste uma variável por vez para descobrir o que funciona.'
+    ]
+  }
+];
