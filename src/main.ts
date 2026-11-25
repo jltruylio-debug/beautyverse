@@ -139,11 +139,7 @@ const assistantAnswers: Array<{ keywords: string[]; answer: string }> = [
   }
 ];
 
-const app = document.querySelector<HTMLDivElement>('#app');
-
-if (!app) {
-  throw new Error('O elemento principal #app não foi encontrado.');
-}
+const app = document.querySelector<HTMLDivElement>('#app')!;
 
 function escapeHTML(value: string): string {
   return value.replace(/[&<>"']/g, (character) => {
